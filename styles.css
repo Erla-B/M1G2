@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: AceroySangre;
+    src: url(AceroySangre.otf);
+  }
+
 body {
     height: 100vh;
     width: 100vw;
@@ -16,5 +21,124 @@ body {
     width: 764px;
     height: 1080px;
     position: relative;
-    border: solid 10px black;
+    background-color: black;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+h1 {
+    position: fixed;
+    margin-top: 70px;
+    margin-left: 90px;
+    font-size: 500%;
+    color: white;
+    font-family: AceroySangre;
+}
+
+h2 {
+    position: fixed;
+    margin-top: 30px;
+    margin-left: 70px;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h3 {
+    position: fixed;
+    margin-top: 250px;
+    margin-left: 270px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h4 {
+    color: palegoldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: fixed;
+    margin-top: 120px;
+    margin-left: 90px;
+}
+
+p {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
+    max-width: 550px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    column-span: all;
+    text-align: justify;
+}
+
+.cta {
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 60px;
+    margin-left: 10px;
+    max-width: 380px;
+}
+
+#item1 {
+    grid-column: span 2;
+    position: relative;
+    color: white;
+}
+
+.item item3 {
+    display: grid;
+    position: fixed;
+    margin-top: 0;
+    margin-right: 0;
+    padding: 0;
+    align-items: right;
+}
+
+.item item4 {
+    grid-column: span all;
+    position: relative;
+}
+
+.item item8 {
+    grid-column: span 2;
+    position: fixed;
+    margin-right: 20px;
+}
+
+.item item10 {
+    display: grid;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.item item11 {
+    position: relative;
+    grid-column: span 2;
+}
+
+.item item12 {
+    position: relative;
+    grid-column: span 2;
+}
+
+.yellow {
+    color: palegoldenrod;
+}
+
+table {
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: 100%;
+    height: 75%;
+}
+
+.logo {
+    margin-top: 180px;
 }
